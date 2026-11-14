@@ -1,11 +1,35 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+import math
 
-One function per operation, in order.
-"""
-# First example
-def add(a, b): 
-    pass
+def square_root(a: int):
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)
 
+def hypotenuse(a: int, b: int):
+    # can have negative nums
+    return math.hypot(a, b)
 
+def add(a: int, b: int):
+    return a + b
+
+def subtract(a: int, b: int):
+    return a - b
+
+def multiply(a: int, b: int):
+    return a * b
+
+def divide(a: int, b: int):
+    if a == 0:
+        raise ZeroDivisionError
+    return b / a
+
+def logarithm(x: int, base: int):
+    #logarithm = log__base(x)
+
+    if base == 0:
+        raise ZeroDivisionError
+
+    return math.log(x, base)
+
+def exponent(a: int, b: int):
+    return a ** b
