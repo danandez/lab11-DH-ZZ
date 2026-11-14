@@ -1,21 +1,29 @@
 import math
 
+def square_root(a: int):
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)
 
-def add(a, b):
+def hypotenuse(a: int, b: int):
+    # can have negative nums
+    return math.hypot(a, b)
+
+def add(a: int, b: int):
     return a + b
 
-def subtract(a, b):
+def subtract(a: int, b: int):
     return a - b
 
-def multiply(a, b):
+def multiply(a: int, b: int):
     return a * b
 
-def divide(a, b):
+def divide(a: int, b: int):
     if a == 0:
         raise ZeroDivisionError
     return b / a
 
-def logarithm(x, base):
+def logarithm(x: int, base: int):
     #logarithm = log__base(x)
 
     if base == 0:
@@ -23,5 +31,5 @@ def logarithm(x, base):
 
     return math.log(x, base)
 
-def exponent(a, b):
+def exponent(a: int, b: int):
     return a ** b
