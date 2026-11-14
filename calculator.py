@@ -45,7 +45,7 @@ def log(a, b):
         raise ValueError("Invalid logarithm base or argument")
     return math.log(b, a)
 
-def multiply(a,b)
+def multiply(a,b):
     return a * b
 
 
