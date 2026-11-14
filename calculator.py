@@ -15,10 +15,10 @@ def add(a: int, b: int):
 def subtract(a: int, b: int):
     return a - b
 
-def multiply(a: int, b: int):
+def mul(a: int, b: int):
     return a * b
 
-def divide(a: int, b: int):
+def div(a: int, b: int):
     if a == 0:
         raise ZeroDivisionError
     return b / a
@@ -31,5 +31,5 @@ def logarithm(x: int, base: int):
 
     return math.log(x, base)
 
-def exponent(a: int, b: int):
+def exp(a: int, b: int):
     return a ** b
