@@ -33,3 +33,16 @@ def logarithm(x: int, base: int):
 
 def exp(a: int, b: int):
     return a ** b
+
+def sub(a, b):
+    return a - b
+
+def log(a, b):
+    if a <= 0 or a == 1 or b <= 0:
+        raise ValueError("Invalid logarithm base or argument")
+    return math.log(b, a)
+
+def multiply(a,b)
+    return a * b
+
+
