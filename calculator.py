@@ -1,3 +1,6 @@
+# https://github.com/danandez/lab11-DH-ZZ
+# Partner 1: Daniel Hernandez
+# Partner 2: Zhijun Zhang
 import math
 
 def square_root(a: int):
